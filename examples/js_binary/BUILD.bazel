@@ -499,7 +499,7 @@ genrule(
 
 ####################################################
 # Use case 11
-# js_binary can be used with a simple custom_role
+# js_binary can be used with a simple custom_rule
 # because everything it needs to run is in the runfiles
 custom_rule(
     name = "run11",
