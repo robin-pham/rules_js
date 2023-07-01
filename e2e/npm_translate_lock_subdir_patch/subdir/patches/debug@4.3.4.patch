@@ -1,9 +1,16 @@
-diff --git a/src/index.js b/src/index.js
-index bf4c57f259df2e16761b45e2636db307c89ba419..dc5da26a027a656556f88f839878eac0d3ece6f3 100644
---- a/src/index.js
-+++ b/src/index.js
-@@ -8,3 +8,4 @@ if (typeof process === 'undefined' || process.type === 'renderer' || process.bro
- } else {
- 	module.exports = require('./node.js');
- }
-+module.exports.patched = true;
+diff --git a/src/common.js b/src/common123.js
+similarity index 99%
+rename from src/common.js
+rename to src/common123.js
+index e3291b20faa1a61fa5acff50d84dba10a97cc3b6..c470a351c51b4863fc5bf63b26452cee32671b88 100644
+--- a/src/common.js
++++ b/src/common123.js
+@@ -3,6 +3,8 @@
+  * This is the common logic for both the Node.js and web browser
+  * implementations of `debug()`.
+  */
++// test
++// add new patching stuff
+ 
+ function setup(env) {
+ 	createDebug.debug = createDebug;
